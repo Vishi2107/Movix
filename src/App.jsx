@@ -16,7 +16,7 @@ import PageNotFount from './pages/404/PageNotFount';
 
 function App() {
   const dispatch = useDispatch()
-  const {url} = useSelectore((state) =>
+  const {url} = useSelector((state) =>
     state.home);
   console.log(url);
 
@@ -33,6 +33,7 @@ function App() {
 
   return (
    <BrowserRouter>
+   {/* <Header /> */}
     <Routes>
       <Route path= "/" element={<Home />} />
       <Route path= "/:mediaType/:id" element={<Details />} />
@@ -41,6 +42,7 @@ function App() {
       <Route path= "*" element={<PageNotFount />} />
       
       </Routes>
+      {/* <Footer /> */}
     </BrowserRouter>
   );
 }
