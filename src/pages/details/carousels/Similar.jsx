@@ -18,4 +18,4 @@ const Similar = ({ mediaType, id }) => {
     );
 };
 
-export default Similar;
+export default Similar

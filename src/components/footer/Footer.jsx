@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
     FaFacebookF,
     FaInstagram,
@@ -10,7 +10,8 @@ import ContentWrapper from "../contentWrapper/ContentWrapper";
 
 import "./style.scss";
 
-const Footer = () => {
+const Footer = () => 
+{
     return (
         <footer className="footer">
             <ContentWrapper>

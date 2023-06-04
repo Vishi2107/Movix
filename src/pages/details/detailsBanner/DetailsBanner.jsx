@@ -234,4 +234,4 @@ const DetailsBanner = ({ video, crew }) => {
     );
 };
 
-export default DetailsBanner;
+export default DetailsBanner

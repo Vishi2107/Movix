@@ -97,4 +97,4 @@ const Carousel = ({ data, loading, endPoint, title}) => {
   )
 }
 
-export default Carousel
+export default Carousel;

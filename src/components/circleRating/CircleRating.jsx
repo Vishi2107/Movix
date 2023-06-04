@@ -4,7 +4,8 @@ import "react-circular-progressbar/dist/styles.css";
 
 import "./style.scss";
 
-const CircleRating = ({ rating }) => {
+const CircleRating = ({ rating }) => 
+{
     return (
         <div className="circleRating">
             <CircularProgressbar
@@ -14,7 +15,8 @@ const CircleRating = ({ rating }) => {
                 styles={buildStyles({
                     pathColor:
                         rating < 5 ? "red" : rating < 7 ? "orange" : "green",
-                })}
+                })
+            }
             />
         </div>
     );

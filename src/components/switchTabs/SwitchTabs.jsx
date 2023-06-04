@@ -32,4 +32,4 @@ const SwitchTabs = ( {data, onTabChange}) => {
     )
 }
 
-export default SwitchTabs
+export default SwitchTabs;

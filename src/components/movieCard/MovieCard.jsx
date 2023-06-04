@@ -41,4 +41,4 @@ const MovieCard = ({ data, fromSearch, mediaType }) => {
     );
 };
 
-export default MovieCard;
+export default MovieCard
