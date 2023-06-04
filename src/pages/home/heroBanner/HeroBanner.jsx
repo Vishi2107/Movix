@@ -23,10 +23,16 @@ const HeroBanner = () => {
     }, [data]);
 
     const searchQueryHandler = (event) => {
-        if(event.key === "Enter" && query.length > 0){
+        if( event.key === "Enter"  && query.length > 0){
             navigate(`/search/${query}`);
         }
     };
+
+    const handleClick = () => {
+        if (query.length > 0) {
+            navigate(`/search/${query}`);
+        }
+    }
   
     return (
     <div className="heroBanner">
@@ -45,13 +51,13 @@ const HeroBanner = () => {
                     Explore now.
                 </span>
                 <div className="searchInput">
-                    <input 
-                        type="text"
-                        placeholder="Search for a movie or TV show.." 
-                        onChange={(e)=> setQuery(e.target.value)}
-                        onKeyUp = {searchQueryHandler}
-                    />
-                    <button>Search</button>
+                <input
+                            type="text"
+                            placeholder="Search for a movie or tv show...."
+                            onChange={(e) => setQuery(e.target.value)}
+                            onKeyUp={searchQueryHandler}
+                        />
+                    <button onClick={handleClick}>Search</button>
                 </div>
             </div>
         </ContentWrapper>
